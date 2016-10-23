@@ -4,38 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Simply Flat-About</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
+    <div class="container">
+        <header class="row">
 
-        <!-- Heading 1, make a link and use "index.html" for href attribute value -->
-        <div>
-            <h1>Simply Flat</h1></div>
+            <!-- Heading 1, make a link and use "index.html" for href attribute value -->
+            <div class="one-third column">
+                <h3>Simply Flat</h3></div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="About.html"></a>
-                </li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="two-thirds column">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
     <main>
-        <section>
-            <div>
+        <section class="row">
+            <div class="one-whole column">
                 <h1>About Us</h1>
-
                 <p>Vel tempor referrentur neglegentur cu, mel ut enim iudicabit intellegat, ea putent salutandi quo. Sonet putant graecis ut nec. Magna laoreet consequuntur vis referrentur neglegentur.
                 </p>
             </div>
+        </section>
 
-            <div>
+        <section class="row">
+
+            <!--insert image-->
+            <div class="one-third column">
                 <h2>There are may variations of passages Lorem ipsum avialabl,  injected generators on the hidden.</h2>
 
                 <p>Tempor admodum adipisci et cum, hinc solum expetendis usu no. Usu ut esse laoreet consequat. Sea mundi decore fastidii et, at mei laudem perfecto oportere, harum deserunt no est. Cum at idque iracundia, diam ceteros molestie vix ad.</p>
@@ -43,12 +48,16 @@
         </section>
 
 
-        <section>
-            <div>
-                <h1>Our Team</h1></div>
+        <section class="row">
 
-            <!--Jason1-->
-            <div>
+            <div class="one-whole column">
+                <h1>Our Team</h1>
+            </div>
+        </section>
+
+        <!--Jason1-->
+        <section class="row">
+            <div class="one-half column">
                 <h3><a href="#">Jason Bourne</a></h3>
                 <!-- Small -->
                 <small>Chief Executive Officer / CEO</small>
@@ -57,22 +66,24 @@
             </div>
 
             <!--Jason2-->
-            <div>
+            <div class="one-half column">
                 <h3><a href="#">Jason Bourne</a></h3>
                 <small>Chief Executive Officer / CEO</small>
 
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
             </div>
+        </section>
 
-            <!--Jason3-->
-            <div>
+        <!--Jason3-->
+        <section class="row">
+            <div class="one-half column">
                 <h3><a href="#">Jason Bourne</a></h3>
                 <small>Chief Executive Officer / CEO</small>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
             </div>
 
             <!--Jason4-->
-            <div>
+            <div class="one-half column">
                 <h3><a href="#">Jason Bourne</a></h3>
                 <small>Chief Executive Officer / CEO</small>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
@@ -81,21 +92,24 @@
     </main>
 
 
+
     <!--FOOTER-->
-    <footer>
-        <div>
+    <footer class="row">
+        <div class="one-third column">
             <h4>Simply Flat</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
             </p>
         </div>
 
-        <div>
+
+        <div class="one-third column">
             <h4>Testimonials</h4>
             <p>Consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. LouEtta
             </p>
         </div>
 
-        <div>
+
+        <div class="one-third column">
             <h4>Contact Us</h4>
             <ul>
                 <li>5B Streat, City 50987</li>
@@ -105,18 +119,20 @@
             </ul>
         </div>
 
-        <div>
+        <div class="one-whole column">
             <h4>We're Social</h4></div>
         <!-- Social media icons go here - You will add them later -->
 
-        <div>
+        <div class="one-half column">
             <p>&copy; 2013 Simply Flat</p>
         </div>
 
         <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
-        <div><a href="#">Theme by Northify</a></div>
-    </footer>
 
+        <div class="one-half column">
+            <a href="#">Theme by Northify</a>
+        </div>
+    </footer>
 </body>
 
 </html>
