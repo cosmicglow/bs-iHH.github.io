@@ -11,13 +11,15 @@
 <body>
     <div class="container">
         <header class="row">
-
             <!-- Heading 1, make a link and use "index.html" for href attribute value -->
             <div class="one-third column">
-                <h3>Simply Flat</h3></div>
+                <h1 class="brand">Simply Flat</h1>
+            </div>
 
-            <nav class="two-thirds column">
-                <ul>
+            <nav class="two-thirds column nav">
+                <!--<nav class="nav"-->
+                <ul class="pull-right">
+                    <!--flushes to the right-->
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="Portfolio.html">Portfolio</a></li>
@@ -28,144 +30,183 @@
         </header>
     </div>
 
-   <!--THIS THEME IS FLAT-->
+    <!--THIS THEME IS FLAT-->
     <main>
-        <section class="row">
-            <div>
-                <h1>This theme is flat, fun and easy to customize.</h1>
-            </div>
-
-            <div class="one-half column">
-                <p>Sit in meis saepe, ea mei unum ancillae liberavisse. Alienum atomorum efficiantur sea, mei ex populo admodum. Est ei illum forensibus constituam, ut vidisse fabulas accusamus pro. Vis vero civibus te, nulla platonem quaerendum in eam
-                </p>
-                <a href="#">Find Out More</a>
-                <a href="#">See Our Clients</a>
-            </div>
-            <!-- Image, path to image is "images/home-banner.png", enter "Laptop" for alt attribute value -->
-            <div class="one-half column"><img src="images/home-banner.png" alt="Laptop" class="img-responsive"></div>
-        </section>
-
-        <section class="row">
-            <div class="one-whole column">
-                <h3>This theme is fully responsive. Well of course it is. This is great!</h3>
-                <a href="#">Find Out More</a>
+        <section class="page-header">
+            <div class="container">
+                <div class="row">
+                    <h1>This theme is flat, fun and easy to customize.</h1>
+                </div>
+                <div class="one-half column">
+                    <p>Sit in meis saepe, ea mei unum ancillae liberavisse. Alienum atomorum efficiantur sea, mei ex populo admodum. Est ei illum forensibus constituam, ut vidisse fabulas accusamus pro. Vis vero civibus te, nulla platonem quaerendum in eam
+                    </p>
+                    <a href="#">Find Out More</a>
+                    <a href="#">See Our Clients</a>
+                </div>
+                <!-- Image, path to image is "images/home-banner.png", enter "Laptop" for alt attribute value -->
+                <div class="one-half column">
+                    <img src="images/home-banner.png" alt="Laptop" class="img-responsive"></div>
             </div>
         </section>
 
-<!--YOU SHOULD CHOOSE-->
-        <section class="row">
-            <div>
-                <h1>You should you choose Simply Flat</h1></div>
-
-            <div class="one-third column">
-                <h3>Fully Responsive</h3>
-                <p>Timeam quaeque fuisset eu has, ex aperiri facilis efficiendi quo, ei sed choro voluptua moderatiu.</p>
-            </div>
-
-            <div class="one-third column">
-                <h3>Super Flat & Fun</h3>
-                <p>Timeam quaeque fuisset eu has, ex aperiri facilis efficiendi quo, ei sed choro voluptua moderatiu.</p>
-            </div>
-
-            <div class="one-third column">
-                <h3>Easy to Configure</h3>
-                <p>Timeam quaeque fuisset eu has, ex aperiri facilis efficiendi quo, ei sed choro voluptua moderatiu.</p>
+        <!--this is not showing up-->
+        <section class="message">
+            <div class="container">
+                <div class="row">
+                    <!--<div class="row">-->
+                    <div class="one-whole column">
+                        <h3>This theme is fully responsive. Well of course it is. This is great!</h3>
+                        <a href="#">Find Out More</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-<!--SHOWCASE-->
-        <section class="row">
-            <div class="one-half column">
-                <h2>Showcase all your work</h2>
-                <p>Eruditi fabellas maiestatis ei vis, populo audiam mnesarchum et vis, prima saepe pri ad. Quidam nonumes an vel, no quo reque eloquentiam. Ex saperet omittantur vix, usu ut bonorum similique. Cum sale commodo ponderum id, nihil vidisse at sed, euismod vivendo ius ne.Quis error concludaturque.</p>
-                <a href="#">See Our Clients</a>
+        <!--YOU SHOULD CHOOSE-->
+        <section class="main-content-top">
+            <div class="container">
+                <div class="row">
+                    <h1>You should you choose Simply Flat</h1></div>
+
+                <div class="one-third column">
+                    <h3>Fully Responsive</h3>
+                    <p>Timeam quaeque fuisset eu has, ex aperiri facilis efficiendi quo, ei sed choro voluptua moderatiu.</p>
+                </div>
+
+                <div class="one-third column">
+                    <h3>Super Flat & Fun</h3>
+                    <p>Timeam quaeque fuisset eu has, ex aperiri facilis efficiendi quo, ei sed choro voluptua moderatiu.</p>
+                </div>
+
+                <div class="one-third column">
+                    <h3>Easy to Configure</h3>
+                    <p>Timeam quaeque fuisset eu has, ex aperiri facilis efficiendi quo, ei sed choro voluptua moderatiu.</p>
+                </div>
             </div>
-            
-<div class="one-half column">
-            <!--div class="one-quarter column"-->
-                <p>Sit amettur</p>
-           <!--div-->
-            <!--<div class="one-quarter column">-->
-                <p>Sadipiscing elit</p>
-           <!--div-->
-            <!--<div class="one-quarter column">-->
-                <p>Pellsque eu posuere</p>
-            <!--div-->
-            <!--<div class="one-quarter column">-->
-                <p>Dolor sit amet</p>
+        </section>
+
+        <!--SHOWCASE YOUR WORK-->
+        <section class="main-content-bottom">
+            <!--adds spacing, main content top, h1 and main content bottom-->
+            <div class="container">
+                <div class="row">
+                    <div class="one-half column">
+                        <h2>Showcase all your work</h2>
+                        <p>Eruditi fabellas maiestatis ei vis, populo audiam mnesarchum et vis, prima saepe pri ad. Quidam nonumes an vel, no quo reque eloquentiam. Ex saperet omittantur vix, usu ut bonorum similique. Cum sale commodo ponderum id, nihil vidisse at sed, euismod vivendo ius ne.Quis error concludaturque.</p>
+                        <a href="#">See Our Clients</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="one-half column">
+                        <!--div class="one-quarter column"-->
+                        <p>Sit amettur</p>
+                        <!--div-->
+                        <!--<div class="one-quarter column">-->
+                        <p>Sadipiscing elit</p>
+                        <!--div-->
+                        <!--<div class="one-quarter column">-->
+                        <p>Pellsque eu posuere</p>
+                        <!--div-->
+                        <!--<div class="one-quarter column">-->
+                        <p>Dolor sit amet</p>
+                    </div>
+                </div>
             </div>
         </section>
 
 
-<!--LOOKS GREAT EVERYWHERE-->
-        <section class="row">
-            <!-- Image, path to image is "images/responsive.png", enter "Responsive" for alt attribute value -->
-            <div class="two-thirds column"><img src="images/responsive.png" alt="Responsive" class="img-responsive"></div>
+        <!--LOOKS GREAT EVERYWHERE-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- Image, path to image is "images/responsive.png", enter "Responsive" for alt attribute value -->
+                    <div class="two-thirds column">
+                        <img src="images/responsive.png" alt="Responsive" class="img-responsive">
+                    </div>
 
-            <div class="one-third column">
-                <h2>Looks Great Everywhere</h2>
-                <p>Inani decore labore ei vel, vix ut agam soleat rendum. Cum meliore postulant ex, aliquam suscipit patrioque usu in meliore postulant.</p>
+                    <div class="one-third column">
+                        <h2>Looks Great Everywhere</h2>
+                        <p>Inani decore labore ei vel, vix ut agam soleat rendum. Cum meliore postulant ex, aliquam suscipit patrioque usu in meliore postulant.</p>
 
-                <ul>
-                    <li>Point One</li>
-                    <li>Point Two</li>
-                    <li>Point Three</li>
-                    <li>Point Four</li>
-                </ul>
+                        <ul>
+                            <li>Point One</li>
+                            <li>Point Two</li>
+                            <li>Point Three</li>
+                            <li>Point Four</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
-        
-<!--FROM THE BLOG-->
-        <section class="row">
-            <!-- Image, path to image is "http://lorempixel.com/400/275/business/", enter "Business meeting" for alt attribute value -->
-            <div class="one-half column"><img src="http://lorempixel.com/400/275/business/" alt="Business meeting" class="img-responsive"></div>
 
-            <div class="one-half column">
-                <h2>From the blog</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel adipiscing elit. Pellentesque eu posuere elit.</p>
-                <a href="#">Read more</a>
+        <!--FROM THE BLOG-->
+
+        <section class="blog-tease">
+            <div class="container">
+                <div class="row">
+                    <!-- Image, path to image is "http://lorempixel.com/400/275/business/", enter "Business meeting" for alt attribute value -->
+                    <div class="one-half column">
+                        <img src="http://lorempixel.com/400/275/business/" alt="Business meeting" class="img-responsive">
+                    </div>
+
+                    <div class="row">
+                        <div class="one-half column">
+                            <h2>From the blog</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel adipiscing elit. Pellentesque eu posuere elit.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
+
     <!--FOOTER-->
-    <footer class="row">
-        <div class="one-third column">
-            <h4>Simply Flat</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
-            </p>
-        </div>
+    <!--FOOTER-->
+    <footer class="container">
+        <div class="row">
+            <div class="one-third column">
+                <h4>Simply Flat</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
+                </p>
+            </div>
 
 
-        <div class="one-third column">
-            <h4>Testimonials</h4>
-            <p>Consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. LouEtta
-            </p>
-        </div>
+            <div class="one-third column">
+                <h4>Testimonials</h4>
+                <p>Consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. LouEtta
+                </p>
+            </div>
 
 
-        <div class="one-third column">
-            <h4>Contact Us</h4>
-            <ul>
-                <li>5B Streat, City 50987</li>
-                <li>info@example.com</li>
-                <li>1.541.258.2881</li>
-                <li>1.541.854.8412</li>
-            </ul>
-        </div>
+            <div class="one-third column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>5B Streat, City 50987</li>
+                    <li>info@example.com</li>
+                    <li>1.541.258.2881</li>
+                    <li>1.541.854.8412</li>
+                </ul>
+            </div>
 
-        <div class="one-whole column">
-            <h4>We're Social</h4></div>
-        <!-- Social media icons go here - You will add them later -->
 
-        <div class="one-half column">
-            <p>&copy; 2013 Simply Flat</p>
-        </div>
+            <div class="one-whole column">
+                <h4 class="social">We're Social</h4></div>
+            <!-- Social media icons go here - You will add them later -->
 
-        <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
+            <div class="one-half column">
+                <p>&copy; 2013 Simply Flat</p>
+            </div>
 
-        <div class="one-half column">
-            <a href="#">Theme by Northify</a>
+            <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
+
+            <div class="one-half column">
+                <a href="#">Theme by Northify</a>
+            </div>
         </div>
     </footer>
 
