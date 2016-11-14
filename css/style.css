@@ -289,6 +289,10 @@ ul {
     padding-bottom: 70px;
 }
 
+.main-content-bottom h1 {
+    color: #000;
+}
+
 .main-content-bottom h2 {
     color: #000;
 }
