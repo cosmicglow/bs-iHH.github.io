@@ -7,17 +7,144 @@
 }
 
 
+/*COLORS 
+#000000      black
+#99999       med gray
+#373737      very dark gray#1e1f1f 
+gray         gray
+#d3d3d3      light gray 
+#5adae2      bright tourquoise#1edce1
+4cd2da       dark tourquoise#5adae2  
+#ob676b      teal
+#f9f8f8      beige#e0d8cd
+#edecea      main bkgrd
+#fff         White
+*/
+
+body {
+    background: #edecea;
+}
+
+h1 {
+    color: #1e1f1f;
+}
+
+h3 {
+    color: #1e1f1f;
+}
+
+h4 {
+    color: #1e1f1f;
+}
+
+a {
+    color: white;
+}
+
+p {
+    color: gray;
+}
+
+.header {
+    background-color: #373737;
+}
+
+.header h1 {
+    color: white;
+}
+
+.home h1 {
+    color: #fff;
+}
+
+.main {
+/*    color: #edecea;*/
+    background-color: #edecea;
+}
+
+.footer {
+    background-color: #373737;
+}
+
+.footer h4 {
+    color: #fff;
+}
+
+.footer p {
+    color: gray;
+}
+
+.footer ul {
+    color: gray;
+}
+
+.footer-bottom {
+    background-color: #gray;
+    color: #fff;
+}
+
+.contentbox {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.contentbox li {
+    color: #1e1f1f;
+}
+
+.contentbox beige {
+    background-color: #e0d8cd;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.contentbox-tourquoise {
+    background-color: #5adae2;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.contentbox>img {
+    float: left;
+    margin-right: 15px;
+}
+
+.contentbox-beige>img {
+    float: left;
+    margin-right: 15px;
+}
+
+.tile {
+    background-color: #5adae2;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-tease {
+    color: #fff;
+}
+
+.blog-tease h2 {
+    color: #fff;
+}
+
+
 /*CSS BODY CONTENT STYLE*/
 
+
 /*box-sizing*/
+
 *,
-*:before,
+*:be fore,
 *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     /*box-sizing: inherit;*/
 }
+
 
 /*GRID CREATION RULES*/
 
@@ -49,6 +176,10 @@
     width: 460px;
 }
 
+.one-quarter column {
+    width: 220px;
+}
+
 .two-thirds {
     width: 620px;
 }
@@ -74,7 +205,7 @@ nav ul li {
 }
 
 ul {
-    style: none;
+    pstyle: none;
     padding: 0;
 }
 
@@ -82,6 +213,7 @@ ul {
     max-width: 100%;
     height: auto;
 }
+
 
 /*Header*/
 
@@ -98,27 +230,54 @@ ul {
     float: right;
 }
 
+
 /*MAIN*/
 
 .page-header {
     /*multiple pages*/
+    background-color: #5adae2;
+    color: #fff;
     padding-top: 30px;
     margin-bottom: 50px;
 }
 
 .page-header p {
     padding-left: 15px;
+    color: #fff;
 }
 
-/*Home aka Index*/
+.page-header h1 {
+    padding-left: 15px;
+    color: #fff;
+}
+
+.page-header home h1 {
+    color: #fff;
+}
+
+
+/*  HOME -Index  */
+
+.page-header h1 {
+    color: #000;
+}
 
 .page-header.home {
     margin-bottom: 0;
 }
 
+.main p {
+    color: #9999;
+}
+
 .message {
+    background-color: #1edce1;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.message h3 {
+    color: #fff;
 }
 
 .main-content-top h1 {
@@ -126,8 +285,20 @@ ul {
     padding-bottom: 70px;
 }
 
+.main-content-bottom h2 {
+    color: #000;
+}
+
+.main-content-bottom p {
+    color: #d3d3d3;
+}
+
 .main-content-bottom {
     padding-bottom: 75px;
+}
+
+.blog-tease p {
+    color: #fff;
 }
 
 .blog-tease {
@@ -138,12 +309,19 @@ ul {
 /*About CSS*/
 
 .team h1 {
+    /*OUR TEAM*/
     /*About CSS*/
     margin-bottom: 40px;
 }
 
+.team-member h3 {
+    /*JASON BOURNE*/
+    color: gray
+}
+
 .team-member {
     margin-bottom: 20px;
+    color: #d3d3d3;
 }
 
 
@@ -181,12 +359,18 @@ ul {
 
 
 /*Contact*/
+
+
 /*Group Selctor*/
 
-.table, /*compound of table style, form style + p & map style + h2 --> 3 items sharg same properties*/
+
+/*compound of table style, form style + p & map style + h2 --> 3 items sharg same properties*/
+
+.table,
 .form p,
 .map h2 {
     margin-left: 15px;
+    color: gray;
 }
 
 
@@ -195,5 +379,3 @@ ul {
 .social {
     text-align: center;
 }
-
-
