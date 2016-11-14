@@ -58,8 +58,8 @@ p {
 }
 
 .main {
-/*    color: #edecea;*/
     background-color: #edecea;
+/*    background-color: #d3d3d3;*/
 }
 
 .footer {
@@ -79,7 +79,7 @@ p {
 }
 
 .footer-bottom {
-    background-color: #gray;
+    background-color: #373737;
     color: #fff;
 }
 
@@ -137,7 +137,7 @@ p {
 /*box-sizing*/
 
 *,
-*:be fore,
+*:before,
 *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -268,6 +268,10 @@ ul {
 
 .main p {
     color: #9999;
+}
+
+.main home {
+    background-color: #edecea;
 }
 
 .message {
