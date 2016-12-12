@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <!--    <div class="container">-->
-    <header class="header">
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <header class="header">
+            <!--        <div class="container">-->
+            <header class="row">
                 <!--                <header class="header">-->
                 <!-- Heading 1, make a link and use "index.html" for href attribute value -->
                 <div class="one-third column">
@@ -30,17 +30,17 @@
                             <li><a href="About.html">About</a></li>
                             <li><a href="Portfolio.html">Portfolio</a></li>
                             <li><a href="Blog.html">Blog</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
+                            <li class="active"><a href="Contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </nav>
-            </div>
-        </div>
-    </header>
+            </header>
+        </header>
+    </div>
 
     <main>
         <div class="container">
-            <section class="page-header">
+            <section class="page-header contact">
                 <!--                <div class="container">-->
                 <div class="row">
                     <div class="one-whole column">
@@ -143,9 +143,9 @@
                             <input type="email" placeholder="email" tabindex="2" required>
                             <input type="tel" placeholder="phone number" tabindex="3" required>
                             <textarea placeholder="comments" tabindex="4" required cols="30" rows="10"></textarea>
-                            <!--<div class="one-quarter column">-->
-                            <!--                            <div class="row">-->
-                            <!--                                <div class="one-quarter column">-->
+
+                            <!--???where do I add this button??   class="btn" class="icon-plus" ???????  >-->
+
                         </form>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                         <h2>We are located here</h2>
                         <!--EMBEDED iframe via 'share' MAP-->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25227.148880465775!2d-122.41992774648723!3d37.78081440451679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858083a662307b%3A0xfd99010c2dc1f950!2sSouth+of+Market%2C+San+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1479111175737" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        <textarea placeholder="Describe yourself here..."></textarea>
+                        <!--                        <textarea placeholder="Describe yourself here..."></textarea>-->
                     </div>
 
                     <div class="one-third column">
@@ -182,9 +182,9 @@
 
 
     <!--FOOTER-->
-    <footer class="container">
-        <footer class="footer">
-            <!--        <div class="container">-->
+
+    <footer class="footer">
+        <div class="container">
             <div class="row">
                 <div class="one-third column">
                     <h4>Simply Flat</h4>
@@ -198,18 +198,12 @@
                 </div>
                 <div class="one-third column">
                     <h4>Contact Us</h4>
-                    <ul class="address">
+                    <ul>
                         <li><i class="fa fa-home"></i> 5B Streat, City 50987</li>
                         <li><i class="fa fa-envelope"></i><a href="#"> info@example.com</a></li>
                         <li><i class="fa fa-phone-square"></i>1.541.258.2881</li>
                         <li><i class="fa fa-print"></i> 1.541.854.8412</li>
                         <li><i class="fa fa-globe"></i><a href="#">http://www.example.com</a></li>
-                    </ul>
-                    <ul>
-                        <li>5B Streat, City 50987</li>
-                        <li>info@example.com</li>
-                        <li>1.541.258.2881</li>
-                        <li>1.541.854.8412</li>
                     </ul>
                 </div>
             </div>
@@ -229,16 +223,17 @@
             </div>
 
             <!-- Social media icons go here - You will add them later -->
-
+            <!-- <footer class="footer">-->
             <div class="container">
-                <div class="row footer-bottom">
-                    <div class="one-half column">
-                        <p>&copy; 2013 Simply Flat</p>
-                    </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="one-half column">
+                            <p>&copy; 2013 Simply Flat</p>
+                        </div>
 
 
-                    <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
-                    <div class="container">
+                        <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
+                        <!--                    <div class="container">-->
                         <div class="row">
                             <div class="one-half column">
                                 <a href="#" class="pull-right">Theme by Northify</a>
@@ -247,8 +242,9 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </footer>
+
 
 
 </body>
