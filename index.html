@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!--FONT AWESOME-->
+    <script src="http://use.fontawesome.com/08174a6492.js"></script>
 </head>
 
 <body>
-    <section>
+    <!--    <div class="container">-->
+    <header class="header">
         <div class="container">
-            <header class="header">
-                <header class="row">
-                    <!-- Heading 1, make a link and use "index.html" for href attribute value -->
-                    <div class="one-third column">
-                        <h1 class="brand">Simply Flat</h1>
-                    </div>
-                    <header class="row">
+            <div class="row">
+                <!--                <header class="header">-->
+                <!-- Heading 1, make a link and use "index.html" for href attribute value -->
+                <div class="one-third column">
+                    <h1 class="brand">Simply Flat</h1>
+                </div>
 
-                        <nav class="two-thirds column nav">
-                            <!--<nav class="nav"-->
-                            <ul class="pull-right">
-                                <!--flushes to the right-->
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="About.html">About</a></li>
-                                <li><a href="Portfolio.html">Portfolio</a></li>
-                                <li><a href="Blog.html">Blog</a></li>
-                                <li><a href="Contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </header>
-                </header>
-            </header>
+                <nav class="nav">
+                    <nav class="two-thirds column">
+                        <!--<nav class="nav"-->
+                        <ul class="pull-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Portfolio.html">Portfolio</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
         </div>
-    </section>
+    </header>
+
 
     <!--THIS THEME IS FLAT-->
     <main class="main">
@@ -116,11 +118,9 @@
                         </div>
                     </div>
 
-                    <!--                                <div class="container">-->
-                    <!--                <div class="row">-->
+
                     <div class="one-third column">
                         <div class="contentbox">
-                            <!--                                <div class="one-third column">-->
                             <div class="contentbox-beige">
                                 <h3><i class="fa fa-heart fa-2x"></i>Super Flat & Fun</h3>
                                 <p>Timeam quaeque fuisset eu has, ex aperiri facilis efficiendi quo, ei sed choro voluptua moderatiu.</p>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
 
-                    <!--                <div class="row">-->
+
                     <div class="one-third column">
                         <div class="contentbox">
                             <div class="contentbox-beige">
@@ -142,7 +142,6 @@
         </section>
 
         <!--SHOWCASE YOUR WORK-->
-        <!--        <section class="main-content-bottom">-->
         <!--adds spacing, main content top, h1 and main content bottom-->
         <section>
             <div class="container">
@@ -194,7 +193,6 @@
             <!--            <div class="container">-->
             <div class="container">
                 <div class="contentbox">
-                    <!-- Image, path to image is "images/responsive.png", enter "Responsive" for alt attribute value -->
                     <div class="row">
                         <div class="two-thirds column">
                             <!--                            <div class="contentbox">-->
@@ -211,7 +209,7 @@
                                         <li><i class="fa fa-check"></i>Point One</li>
                                         <li><i class="fa fa-check"></i>Point Two</li>
                                         <li><i class="fa fa-check"></i>Point Three</li>
-                                        <li><i class="fa a-check"></i>Point Four</li>
+                                        <li><i class="fa fa-check"></i>Point Four</li>
                                     </ul>
                                 </div>
                             </div>
@@ -247,8 +245,9 @@
 
 
     <!--FOOTER-->
-    <footer class="container">
-        <footer class="footer">
+    <!--    <footer class="container">-->
+    <footer class="footer">
+        <div class="container">
             <!--        <div class="container">-->
             <div class="row">
                 <div class="one-third column">
@@ -280,7 +279,9 @@
                             <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin  fa-2x"></i></a></li>
+                            <!--*not on type exer*-->
                             <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+                            <!--not on type exer-->
                             <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
                         </ul>
                     </div>
@@ -288,25 +289,27 @@
             </div>
 
             <!-- Social media icons go here - You will add them later -->
-
+            <!-- <footer class="footer">-->
             <div class="container">
-                <div class="row footer-bottom">
-                    <div class="one-half column">
-                        <p>&copy; 2013 Simply Flat</p>
-                    </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="one-half column">
+                            <p>&copy; 2013 Simply Flat</p>
+                        </div>
 
 
-                    <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="one-half column">
-                                <a href="#" class="pull-right">Theme by Northify</a>
+                        <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="one-half column">
+                                    <a href="#" class="pull-right">Theme by Northify</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </footer>
 
 
