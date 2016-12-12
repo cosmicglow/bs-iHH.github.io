@@ -16,6 +16,7 @@ gray         gray
 #d3d3d3      light gray 
 #5adae2      bright tourquoise#1edce1
 4cd2da       dark tourquoise#5adae2  
+#0B676B;     dark teal
 #ob676b      teal
 #f9f8f8      beige#e0d8cd
 #edecea      main bkgrd
@@ -64,7 +65,6 @@ p {
 }
 
 ul {
-    color: gray;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -87,67 +87,10 @@ ul {
     /*    background-color: #d3d3d3;*/
 }
 
-.footer {
-    background-color: #373737;
-}
-
-.footer li {
-    color: gray;
-    background-color: #373737;
-}
-
-.footer h4 {
-    color: #fff;
-}
-
-.footer p {
-    font-size: 16px;
-    font-weight: 200;
-    margin-top: 0;
-    color: gray;
-}
-
-.footer ul {
-    font-size: 16px;
-    font-weight: 200;
-    color: gray;
-}
-
-.footer-bottom {
-    background-color: #212121;
-    color: #fff;
-}
-
-
-/*Footer*/
-
-.social {
-    text-align: center;
-}
-
-.social-list {
-    text-align: center;
-}
-
-.social-list li {
-    display: inline-block;
-}
-
-.social-list i {
-    background-color: #2D2D2D;
-    margin: 5px 10px 0 0;
-    padding: 3px;
-    width: 40px;
-    display: inline-block;
-}
-
-
-/*CONTENT BOXES*/
-
 .contentbox {
     background-color: #fff;
     padding: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .contentbox h4 {
@@ -175,6 +118,7 @@ ul {
     background-color: #5adae2;
     padding: 10px;
     margin-bottom: 70px;
+    /*DOES THIS NEED TO PULLRIGHT SO THE BTN GOES TO THE BTMRIGHT CORNER?*/
 }
 
 .contentbox>img {
@@ -197,9 +141,6 @@ ul {
     margin-bottom: 10px;
 }
 
-
-/*TILING*/
-
 .tile p {
     margin: 0;
 }
@@ -216,12 +157,8 @@ ul {
     color: #fff;
 }
 
-.icons p {
-    color: #fff;
-}
 
-
-/*CSS BODY CONTAINERS CONTENT STYLE*/
+/*CSS BODY CONTENT STYLE*/
 
 
 /*box-sizing*/
@@ -290,13 +227,47 @@ ul {
     margin-right: 0;
 }
 
-nav ul li {
+.nav {
+    padding-top: 60px;
+}
+
+.nav li {
+    font-size: 18px;
+    /*removed ul from this rule 12/11/2016*/
+    /*    font-size: 18px;*/
     display: inline-block;
+    float: none;
+    border-right: 1px solid #dedede;
+    /*light grey*/
+}
+
+.nav li:last-child {
+    /*the last li will be targeted*/
+    border-right: 0;
+    /*hides furthermost right border*/
+}
+
+nav a {
+    padding: 0px 10px;
+    -webkit-transition: color 0.3s ease 0s;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+nav a:hover {
+    color: #5adae2;
+}
+
+.active a {
+    color: #5adae2;
 }
 
 ul {
-    style: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .img-responsive {
@@ -308,20 +279,12 @@ ul {
 /*Header*/
 
 
-/*COMPOUND-SELECTOR*/
+/*COMPOUND-SELECTORS*/
 
 .brand {
     font-size: 22px;
     padding-top: 45px;
     padding-bottom: 45px;
-}
-
-.nav li {
-    font-size: 18px;
-}
-
-.nav {
-    padding-top: 60px;
 }
 
 .pull-right {
@@ -331,9 +294,6 @@ ul {
 
 /*MAIN*/
 
-
-/*PAGE-HEADER*/
-
 .page-header {
     /*multiple pages*/
     background-color: #5adae2;
@@ -342,39 +302,45 @@ ul {
     margin-bottom: 50px;
 }
 
-.page-header.home {
-    margin-bottom: 0;
-}
-
+/*
 .page-header.home p {
-    font-size: 18px;   /*font size call-out is 26 in typo exer*/
+    font-size: 18px;
     font-weight: 200;
+*/
 }
 
 .page-header.home a {
     padding-left: 35px;
 }
 
-.page-header p {        
-    font-size: 20px;    /*font size call-out is 26 in typo exer*/
+.page-header p {
+    font-size: 20px;
     padding-left: 15px;
     color: #fff;
 }
 
 .page-header h1 {
-     color: #000;
-    font-size: 40px;
+    font-size: 26px;
     font-weight: bold;
     padding-left: 15px;
+    color: #fff;
 }
 
-/*
 .page-header home h1 {
     color: #fff;
 }
-*/
+
+
 /*  HOME -Index  */
 
+.page-header h1 {
+    color: #000;
+    font-weight: bold;
+}
+
+.page-header.home {
+    margin-bottom: 0;
+}
 
 .page-header.home h1 {
     font-weight: normal;
@@ -403,13 +369,17 @@ ul {
 .main-content-top i {
     color: #5adae2;
     vertical-align: -10px;
-    /* center icon to heading */
+    /* centers icon to heading */
 }
 
 .main-content-top h1 {
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
+}
+
+.icons p {
+    color: #fff;
 }
 
 .main-content-bottom h1 {
@@ -458,7 +428,8 @@ ul {
 }
 
 .team-member h1 {
-    text-align: center;
+    /*    text-align: center;*/
+    text-align: right;
 }
 
 .team-member ul {
@@ -469,11 +440,16 @@ ul {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
-    text-align: right;
+    /*    text-align: right;*/
+    /*this is not on typog exer...*/
 }
 
 .team-member a {
     color: #1e1f1f;
+}
+
+.team-member a:hover {
+    color: #5adae2;
 }
 
 .team-member i {
@@ -485,6 +461,11 @@ ul {
     width: 22px;
     display: inline-block;
     text-align: center;
+}
+
+.team-member i:hover {
+    color: #5adae2;
+    background-color: #lelflf;
 }
 
 .address,
@@ -501,11 +482,32 @@ ul {
 
 .portfolio-item {
     margin-bottom: 10px;
+    position: relative;
 }
 
 .portfolio-title {
     /* portfolio-title hides (portfolio image) text */
-    display: none;
+    /*    display: none;*/
+    color: white;
+    text-align: center;
+    height: 308px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /*nothing displays at zero*/
+    padding: 10px;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
+}
+
+.portfolio-title:hover {
+    background-color: #5adae2;
+    opacity: .9/*almost opaque*/
 }
 
 
@@ -518,6 +520,7 @@ ul {
     margin-top: 5px;
     margin-right: 5px;
     display: inline-block;
+    /*this property is not listed on typog exercise*/
 }
 
 .info i {
@@ -525,6 +528,14 @@ ul {
     display: inline-block;
     width: 22px;
     text-align: center;
+}
+
+.info a:hover {
+    color: #5adae2;
+}
+
+.info i:hover {
+    color: #5adae2;
 }
 
 .sidebar {
@@ -570,4 +581,115 @@ ul {
 .map h2 {
     margin-left: 15px;
     color: gray;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: #373737;
+}
+
+.footer li {
+    color: gray;
+    background-color: #373737;
+}
+
+.footer h4 {
+    color: #fff;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 0;
+    /*    color: gray;*/
+}
+
+.footer ul {
+    font-size: 16px;
+    font-weight: 200;
+    /*    color: gray;*/
+}
+
+.footer-bottom {
+    background-color: #212121;
+    color: #fff;
+}
+
+.footer-bottom a {
+    color: white;
+}
+
+.footer-bottom a:hover {
+    color: #5adae2;
+}
+
+.footer a:hover,
+.footer i:hover {
+    color: #5adae2;
+}
+
+.social {
+    text-align: center;
+}
+
+.social-list {
+    text-align: center;
+}
+
+.social-list li {
+    display: inline-block;
+}
+
+.social-list i {
+    background-color: #2D2D2D;
+    margin: 5px 10px 0 0;
+    padding: 3px;
+    width: 40px;
+    display: inline-block;
+}
+
+.social-list i:hover {
+    background-color: #373737/*dark gray*/
+}
+
+
+/*BUTTONS and COMPOUND SELECTORS*/
+
+.btn > i {
+    /*child combinator, direct descendent combinator. any i tags below the .btn will be white*/
+    color: #fff;
+}
+
+page-header.btn {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.message .btn {
+    margin-left: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    background-color: #0B676B;
+    /*teal*/
+    color: #fff;
+    padding: 15px 20px;
+    border: 0 none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    -webkit-transition: background 0.3s ease 0s;
+    -moz-transition: background 0.3s ease-out;
+    -ms-transition: background 0.3s ease-out;
+    -o-transition: background 0.3s ease-out;
+    transition: background 0.3s ease-out;
+}
+
+.btn:hover {
+    background-color: #588B8D;
+    /*lighter teal*/
 }
