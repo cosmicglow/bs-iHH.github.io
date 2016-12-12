@@ -1,14 +1,16 @@
-@charset "UTF-8" html {
-    /*Box-sizing*  DECLARE AT TOP SO IT OVERRIDES WHAT'S BELOW*/
+@charset "UTF-8"
+/*Box-sizing*  DECLARE AT TOP SO IT OVERRIDES WHAT'S BELOW*/
+
+html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
     box-sizing: border-box;
 }
 
 
 /*COLORS 
 #000000      black
+#212121      darkest gray when dark gray not working
 #373737      very dark gray#1e1f1f 
 gray         gray
 #d3d3d3      light gray 
@@ -20,7 +22,10 @@ gray         gray
 #fff         White
 */
 
-<!--GLOBAL-RULES--> body {
+
+/*--GLOBAL-RULES-->*/
+
+body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 1.5;
@@ -59,6 +64,7 @@ p {
 }
 
 ul {
+    color: gray;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -85,6 +91,11 @@ ul {
     background-color: #373737;
 }
 
+.footer li {
+    color: gray;
+    background-color: #373737;
+}
+
 .footer h4 {
     color: #fff;
 }
@@ -103,9 +114,35 @@ ul {
 }
 
 .footer-bottom {
-    background-color: #373737;
+    background-color: #212121;
     color: #fff;
 }
+
+
+/*Footer*/
+
+.social {
+    text-align: center;
+}
+
+.social-list {
+    text-align: center;
+}
+
+.social-list li {
+    display: inline-block;
+}
+
+.social-list i {
+    background-color: #2D2D2D;
+    margin: 5px 10px 0 0;
+    padding: 3px;
+    width: 40px;
+    display: inline-block;
+}
+
+
+/*CONTENT BOXES*/
 
 .contentbox {
     background-color: #fff;
@@ -160,6 +197,9 @@ ul {
     margin-bottom: 10px;
 }
 
+
+/*TILING*/
+
 .tile p {
     margin: 0;
 }
@@ -176,8 +216,12 @@ ul {
     color: #fff;
 }
 
+.icons p {
+    color: #fff;
+}
 
-/*CSS BODY CONTENT STYLE*/
+
+/*CSS BODY CONTAINERS CONTENT STYLE*/
 
 
 /*box-sizing*/
@@ -222,7 +266,7 @@ ul {
     width: 460px;
 }
 
-.one-quarter column {
+.one-quarter {
     width: 220px;
 }
 
@@ -263,7 +307,10 @@ ul {
 
 /*Header*/
 
-<!--COMPOUND-SELECTORS--> .brand {
+
+/*COMPOUND-SELECTOR*/
+
+.brand {
     font-size: 22px;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -284,6 +331,9 @@ ul {
 
 /*MAIN*/
 
+
+/*PAGE-HEADER*/
+
 .page-header {
     /*multiple pages*/
     background-color: #5adae2;
@@ -292,8 +342,12 @@ ul {
     margin-bottom: 50px;
 }
 
+.page-header.home {
+    margin-bottom: 0;
+}
+
 .page-header.home p {
-    font-size: 18px;
+    font-size: 18px;   /*font size call-out is 26 in typo exer*/
     font-weight: 200;
 }
 
@@ -301,32 +355,26 @@ ul {
     padding-left: 35px;
 }
 
-.page-header p {
-    font-size: 26px;
+.page-header p {        
+    font-size: 20px;    /*font size call-out is 26 in typo exer*/
     padding-left: 15px;
     color: #fff;
 }
 
 .page-header h1 {
+     color: #000;
+    font-size: 40px;
     font-weight: bold;
     padding-left: 15px;
-    color: #fff;
 }
 
+/*
 .page-header home h1 {
     color: #fff;
 }
-
-
+*/
 /*  HOME -Index  */
 
-.page-header h1 {
-    color: #000;
-}
-
-.page-header.home {
-    margin-bottom: 0;
-}
 
 .page-header.home h1 {
     font-weight: normal;
@@ -349,6 +397,7 @@ ul {
 
 .message h3 {
     color: #fff;
+    font-size: 15px;
 }
 
 .main-content-top i {
@@ -360,6 +409,7 @@ ul {
 .main-content-top h1 {
     padding-top: 70px;
     padding-bottom: 70px;
+    text-align: center;
 }
 
 .main-content-bottom h1 {
@@ -368,6 +418,7 @@ ul {
 
 .main-content-bottom h2 {
     color: #000;
+    font-size: 28px;
 }
 
 .main-content-bottom p {
@@ -375,7 +426,7 @@ ul {
 }
 
 .main-content-bottom {
-    padding-bottom: 75px;
+    padding-bottom: 0px;
 }
 
 .blog-tease p {
@@ -383,7 +434,7 @@ ul {
 }
 
 .blog-tease {
-    height: 210px;
+    min-height: 210px;
 }
 
 
@@ -393,6 +444,7 @@ ul {
     /*OUR TEAM*/
     /*About CSS*/
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .team-member h3 {
@@ -518,27 +570,4 @@ ul {
 .map h2 {
     margin-left: 15px;
     color: gray;
-}
-
-
-/*Footer*/
-
-.social {
-    text-align: center;
-}
-
-.social list {
-    text-align: center;
-}
-
-.social list li {
-    display: inline-block;
-}
-
-.social list i {
-    background-color: #2D2D2D;
-    margin: 5px 10px 0 0;
-    padding: 3px;
-    width: 40px;
-    display: inline-block;
 }
