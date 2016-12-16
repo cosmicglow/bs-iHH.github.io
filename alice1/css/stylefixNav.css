@@ -1,0 +1,335 @@
+/*@charset "UTF-8" */
+
+
+/*Box-sizing*  DECLARE AT TOP SO IT OVERRIDES WHAT'S BELOW*/
+
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+
+}
+
+/*COLORS 
+#000000      black
+#373737      very dark gray#1e1f1f 
+gray         gray
+#d3d3d3      light gray 
+#f9f8f8      light beige/eggshell  background color for pages
+#e0d8cd      darkest beige ...contentbox color
+#edecea      main bkgrd
+#fff         White
+*/
+html {
+    background-color: #fff;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    background-color: #edecea;
+}
+h1 {
+    font-size: 20px;
+    color: #1e1f1f;
+}
+h3 {
+    font-size: 14px;
+    font-weight: 200;
+    color: #1e1f1f;
+}
+h4 {
+    font-size: 18px;
+    color: #1e1f1f;
+}
+
+/*
+a {
+    text-decoration: none;
+    color: white;
+    transition: <property> <duration><timing-function><delay>;
+}
+*/
+.judge p {
+    font-size: 18px;
+    color: gray;
+}
+.actions p {
+    font-size: 18px;
+    color: gray;
+}
+.areas h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+}
+.gray p {
+    font-size: 18px;
+    color: gray;
+}
+.services p {
+    font-size: 18px;
+    color: gray;
+}
+ul {
+    /*    color:black;*/
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    color: black;
+    display: inline-block;
+    float: none;
+    /*    border-right: 1px solid #;*/
+    
+    font-size: 18px;
+}
+.AliceLogo {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: MooMoo;
+    font-size: 26px;
+    color: white;
+    background-color: black;
+}
+.header {
+    background-color: #fff;
+}
+
+/*
+.focus {
+    font-size: 10px;
+    color: black;
+}
+*/
+.focus {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 0;
+    color: black;
+}
+.contentbox {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+.contentbox-topics {
+    background-color: #edecea;
+    padding: 10px;
+    margin-bottom: 300px;
+}
+.ActionTopics {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+/*CSS BODY CONTENT STYLE*/
+
+/*box-sizing*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+/*GRID CREATION RULES*/
+.container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.column {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.row {
+    overflow: hidden;
+}
+.one-whole {
+    width: 960px;
+}
+.three-quarters {
+    width: 700px;
+}
+.one-half {
+    width: 460px;
+}
+.one-quarter column {
+    width: 220px;
+}
+.two-thirds {
+    width: 620px;
+}
+.one-third {
+    width: 300px;
+    /*    padding might need to be taken out... not in instructions but fixes "contacy us"*/
+    
+    padding-top: 75px;
+}
+.one-sixth {
+    width: 140px;
+}
+.alpha {
+    margin-left: 0;
+}
+.omega {
+    margin-right: 0;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Header*/
+
+/*COMPOUND-SELECTORS*/
+.brand {
+    font-size: 22px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+/*
+nav {
+    display: inline-block;
+    color: #000;
+}
+*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*
+.nav a {
+    padding: 0px 10px;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opscity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
+}
+*/
+.nav a:hover {
+    color: saddlebrown;
+}
+
+/*
+.active a {
+    color: #fff;
+}
+*/
+.pull-right {
+    float: right;
+}
+
+/*MAIN*/
+.page-overlay {
+    background-color: #fff;
+    color: #fff;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+.page-overlay p {
+    font-size: 18px;
+    font-weight: 200;
+}
+.page-overlay h1 {
+    padding-left: 35px;
+}
+.page-overlay h2 {
+    font-size: 26px;
+    padding-left: 15px;
+    color: #fff;
+}
+.main p {
+    color: gray;
+}
+
+/*About CSS*/
+.photos img {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/*Footer*/
+
+/*
+.social {
+    text-align: center;
+}
+.social-list {
+    text-align: center;
+}
+.social-list li {
+    display: inline-block;
+}
+.social-list i {
+    background-color: #2D2D2D;
+    margin: 5px 10px 0 0;
+    padding: 3px;
+    width: 40px;
+    display: inline-block;
+}
+.social-list i:hover {
+    background-color: #373737;
+    dark gray
+}
+*/
+.footer-bottom a {
+    color: #000;
+}
+.footer-bottom a:hover {
+    color: saddlebrown;
+}
+
+/*footer links*/
+.footer a:hover,
+.footer i:hover {
+    color: saddlebrown;
+}
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    /*
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
+*/
+}
+.btn:hover {
+    background-color: orange;
+    /*light teal*/
+}
+
+/*
+.btn > i {
+    put this class AFTER any class defining btn color so only the color of 'i' tags will be white.
+    
+    color: #fff;
+}
+*/
+.ReadMore .btn {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.calendar .btn {
+    margin-left: 20px;
+}
