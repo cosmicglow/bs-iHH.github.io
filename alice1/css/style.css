@@ -3,181 +3,26 @@
 
 /*Box-sizing*  DECLARE AT TOP SO IT OVERRIDES WHAT'S BELOW*/
 
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-
-}
 
 /*COLORS 
-#000000      black
-#373737      very dark gray#1e1f1f 
+#000         black
+#f1f1f1      white smoke
 gray         gray
 #d3d3d3      light gray 
-#f9f8f8      light beige/eggshell  background color for pages
-#e0d8cd      darkest beige ...contentbox color
 #edecea      main bkgrd
 #fff         White
 */
+
 html {
     background-color: #fff;
-}
-body {
-    font-size: 10px;
-    line-height: 1.5;
-    background-color: #fff;
-    /*
-}
-h1 {
-    font-size: 20px;
-    color: #1e1f1f;
-}
-h3 {
-    font-size: 14px;
-    font-weight: 200;
-    color: #1e1f1f;
-}
-h4 {
-    font-size: 18px;
-    color: #1e1f1f;
-*/
-}
-.main {
-    background-color: #fff;
-}
-a {
-    text-decoration: none;
-    color: #000;
-    transition: <property> <duration><timing-function><delay>;
-}
-.judge p {
-    font-size: 18px;
-    color: gray;
-}
-.Actions {
-    background-color: #f1f1f1;
-    font-size: 18px;
-}
-.areas {
-    background-color: #fff;
-    width: 960px;
-    min-height: inherit;
-}
-.areas h1 {
-    font-size: 32px;
-    font-weight: 400;
-    color: black;
-}
-.gray {
-    padding-top: 60px;
-    background-color: #f1f1f1;
-    font-size: 18px;
-    color: da;
-}
-.popular-services {
-    padding-top: 15px;
-    background-color: #fff;
-    font-size: 18px;
-    color: gray;
-}
-ul {
-    color: black;
-    display: inline-block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.nav li {
-    /*NavBar*/
-    
-    padding-top: 5px;
-    padding-bottom: 5px;
-    /*margin-right: auto;*/
-    
-    margin-top: 150px;
-    color: black;
-    display: inline-block;
-    float: none;
-    /*    border-right: 1px solid #;*/
-    
-    font-size: 10px;
-    font-weight: 5;
-}
-.nav a {
-    padding: 0px 10px;
-    -webkit-transition: opacity 0.3s ease 0s;
-    -moz-transition: opacity 0.3s ease-out;
-    -ms-transition: opacity 0.3s ease-out;
-    -o-transition: opscity 0.3s ease-out;
-    transition: opacity 0.3s ease 0s;
-}
-*/ .nav a:hover {
-    color: saddlebrown;
-}
-.pull-right {
-    float: right;
-    display: inline-block;
-    list-style: none;
-    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/*
-.active a {
-    color: #fff;
-}
-*/
-.AliceLogo {
-    padding-top: 10px;
-    padding-bottom: 2px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 26px;
-    color: white;
-    background-color: black;
-}
-.header {
-    background-color: #fff;
-}
 
-/*
-.focus {
-    font-size: 10px;
-    color: black;
-}
-*/
-.page-overlay {}
-.publications {
-    background-color: #fff;
-}
-.focus {
-    font-size: 9px;
-    font-weight: 600;
-    margin-top: 0;
-    color: black;
-}
+/*************************************BOX-SIZING***/
 
-/*
-.contentbox {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 70px;
-}
-*/
-.contentbox-topics {
-    background-color: #f1f1f1;
-    padding: 10px;
-    margin-bottom: 100px;
-}
-.ActionTopics {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 70px;
-}
-
-/*CSS BODY CONTENT STYLE*/
-
-/*box-sizing*/
 *,
 *:before,
 *:after {
@@ -187,145 +32,527 @@ ul {
     box-sizing: inherit;
 }
 
-/*GRID CREATION RULES*/
+
+/*************************************GRID***/
+
 .container {
     width: 960px;
     margin-right: auto;
     margin-left: auto;
 }
+
 .column {
     float: left;
     margin-right: 10px;
     margin-left: 10px;
 }
+
 .row {
     overflow: hidden;
 }
+
 .one-whole {
     width: 960px;
 }
+
 .three-quarters {
     width: 700px;
 }
+
 .one-half {
     width: 460px;
 }
-.one-quarter column {
+
+.one-quarter {
     width: 220px;
 }
+
 .two-thirds {
     width: 620px;
 }
+
 .one-third {
     width: 300px;
     /*    padding might need to be taken out... not in instructions but fixes "contacy us"*/
-    
+}
+
+.two-thirds-header {
+    /*    padding might need to be taken out... not in instructions but fixes "contacy us"*/
     padding-top: 75px;
 }
+
 .one-sixth {
     width: 140px;
 }
+
 .alpha {
     margin-left: 0;
 }
+
 .omega {
     margin-right: 0;
 }
+
 .img-responsive {
     max-width: 100%;
     height: auto;
 }
 
-/*Header*/
 
-/*COMPOUND-SELECTORS*/
+/*************************************BODY GLOBAL***/
 
-/*MAIN*/
-.page-overlay {
+body {
     background-color: #fff;
-    color: #fff;
-    padding-top: 30px;
+}
+
+a {
+    /*'focus' specialties at footer*/
+    text-decoration: none;
+    color: #000;
+    transition: <property> <duration><timing-function><delay>;
+}
+
+
+/*************************************HDR***/
+
+.header {
+    margin-top: 90px;
+    background-color: #fff;
+}
+
+.AliceLogo h1 {
+    padding-top: 20px;
+}
+
+.AliceLogo {
+    width: 140px;
+    height: 80px;
+    padding-left: ;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-top: 25px;
     margin-bottom: 50px;
-}
-.page-overlay p {
-    font-size: 18px;
-    font-weight: 200;
-}
-.page-overlay h1 {
-    padding-left: 35px;
-}
-.page-overlay h2 {
-    font-size: 26px;
-    padding-left: 15px;
-    color: #fff;
-}
-.main p {
-    color: gray;
-}
-ul {
-    /*    color:black;*/
-    
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/*About CSS*/
-
-/*
-.photos img {
-    padding-right: 10px;
-    padding-bottom: 10px;
-*/
-
-}
-
-/*Footer*/
-footer {
+    text-align: center;
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 25px;
+    color: white;
     background-color: black;
 }
-footer p {
-    color: darkgray;
-}
-.footer a {
-    color: #000;
-}
-.footer a:hover {
-    color: saddlebrown;
-}
-.footer i:hover {
-    color: saddlebrown;
-}
 
-/*BUTTONS*/
-.btn {
-    color: #000;
-    display: inline-block;
-    font-size: 12px;
-    background-color: lightgrey;
-    border-radius: 100px;
-    padding: 10px 10px;
-    border: none;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 5px;
+.AliceLogo:hover {
+    background-color: saddlebrown;
     -webkit-transition: opacity 0.3s ease 0s;
     -moz-transition: opacity 0.3s ease-out;
     -ms-transition: opacity 0.3s ease-out;
     -o-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease 0s;
 }
+
+
+/*************************************NAV***/
+
+.nav li {
+    /*NavBar*/
+    font-size: 14px;
+    font-weight: 300px;
+    color: black;
+    padding-top: 70px;
+    padding-bottom: 5px;
+    padding-left: px;
+    /*margin-right: auto;*/
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    float: none;
+    /*    border-right: 1px solid #;*/
+}
+
+.nav a {
+    /*space around the nav*/
+    padding: 0px 15px;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opscity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
+}
+
+.nav a:hover {
+    color: saddlebrown;
+}
+
+.pull-right {
+    float: right;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+ul {
+    color: black;
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*********************************INDEX MAIN***/
+
+.main {
+    background-color: #fff;
+}
+
+.main p {
+    color: gray;
+}
+
+.judge {
+    background-color: #edecea;
+    padding-top: px;
+    padding-bottom: px;
+    margin: 0;
+    : 100%;
+}
+
+
+/*
+.judge p {
+    font-size: 10px;
+    color: #d3d3d3;
+}
+*/
+
+
+/******************************INDEX MAIN SPAN JUDGE***/
+
+
+/*REALIZE*/
+
+
+/*    color: #b45939;*/
+
+.span-judge {
+    font-size: 40px;
+    color: #fff;
+    background-image: image("#");
+    background-color: none;
+    float: left;
+    padding: 3px;
+    position: absolute;
+    top: 420px;
+    left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.span-judge2 {
+    /*qualified*/
+    font-kerning: px;
+    font-size: 30px;
+    line-height: 150%;
+    color: #fff;
+    opacity: .7;
+    background-image: image("#");
+    background-color: none;
+    float: left;
+    padding: 3px;
+    position: absolute;
+    top: 470px;
+    left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.span-help {
+    /*SPAN red words*/
+    color: #b45939;
+    font-size: 40px;
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-weight: 100;
+    padding-left: 70px;
+    position: absolute;
+    top: 570px;
+    left: 155px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*
+div:first-child {
+    opacity: .99;
+}
+
+*/
+
+
+/*************************************areas****focus specialities***/
+
+.areas {
+    margin-bottom: 120px;
+    background-color: #fff;
+    width: 960px;
+    min-height: inherit;
+}
+
+.areas h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.specialty {
+    margin-top: 0;
+    color: black;
+}
+
+.focus {
+    font-size: 9px;
+    font-weight: 900;
+}
+
+
+/*************************************ABOUT***/
+
+gray p {
+    color: #000;
+}
+
+
+/*.gray {
+        font-size: 10px;
+    color: #000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    
+}
+*/
+
+.gray h2 {
+    font-size: px;
+    font-weight: 400;
+}
+
+.gray h3 {
+    font-size: 9px;
+    font-weight: 400;
+}
+
+
+/*************************************INDEX***GRAY***/
+
+.Actions {
+    padding-top: 20px;
+    background-color: #edecea;
+    padding-bottom: 90px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    background-color: #f1f1f1;
+    /*
+    font-size: 9px;
+    line-height: 1.4
+*/
+}
+
+contentbox-lady h1 {
+    font-size: 12px;
+}
+
+.contentbox-gavel h1 {
+    font-size: 12px;
+}
+
+.contentbox-books h1 {
+    font-size: 12px;
+}
+
+.span-cal {
+    padding-top: 0;
+}
+
+.contentbox-lady {}
+
+.contentbox-lady p {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.contentbox-gavel p {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.contentbox-books p {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+
+/*********************************GRAY**ABOUT***/
+
+.contentbox-business,
+.contentbox-education,
+.contentbox-science {
+    text-align: center;
+}
+
+.contentbox-business p,
+.contentbox-education p,
+.contentbox-science p {
+    color: #000;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.contentbox-real,
+.contentbox-fiscal,
+.contentbox-company,
+.contentbox-inheritance,
+.contentbox-litigation {
+    /*    border-radius: 2em;*/
+    font-size: 9px;
+    width: ;
+    height: ;
+    border: 2px;
+    border-color: #000;
+    background-image: image("") padding-top: 0;
+    padding-bottom: 0;
+    margin: 10px;
+}
+
+
+/*************************************PUBLICATIONS***/
+
+.Publications {
+    background-color: #f1f1f1;
+}
+
+
+/*************************************SERVICES***/
+
+.popular-services {
+    margin-top: 5px;
+    padding-top: 45px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}
+
+.popular-services p {
+    color: #000;
+}
+
+
+/*************************************COMPOUND SELECTORS***/
+
+
+/*************************************FOOTER***/
+
+footer {
+    background-color: black;
+    padding-bottom: 55px;
+    padding-top: 5px;
+    margin-top: 35px;
+}
+
+footer p {
+    color: grey;
+    font-size: 10px;
+}
+
+.footer a {
+    color: grey;
+}
+
+.footer a:hover,
+.footer p:hover {
+    color: gold;
+}
+
+
+/*************************************BUTTONS***/
+
+.btn-cal href {
+    font-size: 9px;
+    color: white;
+    padding-top: 10px;
+}
+
 .btn-cal {
     color: #fff;
-    display: inline-block;
     font-size: 9px;
-    background-color: black;
-    /*    padding: 5px 10px;*/
+    font-weight: 300;
+    width: 80px;
+    height: 20px;
+    /*    color: white;*/
+    display: inline-block;
+    background-color: #000;
+    /*        padding: 5px 10px;*/
     border: none;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-top: 1px;
+    margin-top: 0px;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
 }
+
+.btn {
+    /*    color: #fff;*/
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 100px;
+    border-color: red 5px solid;
+    background-color: lightgrey;
+    padding: 0px 10px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
+}
+
 .btn:hover {
-    background-color: orange;
+    background-color: peru;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
+}
+
+.btn-cal:hover {
+    background-color: saddlebrown;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
 }
