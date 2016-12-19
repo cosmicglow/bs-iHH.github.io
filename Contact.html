@@ -137,17 +137,22 @@
         <section class="form">
             <div class="container">
                 <div class="row">
-                    <div class="one-whole column">
-                        <form action="#" method="post" name="contact-form">
-                            <input type="text" placeholder="your name" tabindex="1" required>
-                            <input type="email" placeholder="email" tabindex="2" required>
-                            <input type="tel" placeholder="phone number" tabindex="3" required>
-                            <textarea placeholder="comments" tabindex="4" required cols="30" rows="10"></textarea>
-
-                            <!--???where do I add this button??   class="btn" class="icon-plus" ???????  >-->
-
-                        </form>
-                    </div>
+                    <form action="#" method="post" name="contact-form" class="contact-form">
+                        <div class="one-half column">
+                            <div>
+                                <input type="text" placeholder="your name" tabindex="1" required>
+                                <input type="email" placeholder="email" tabindex="2" required>
+                                <input type="tel" placeholder="phone number" tabindex="3" required>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="one-half column">
+                                <textarea placeholder="comments" tabindex="4" required cols="30" rows="10"></textarea>
+                                <input type="submit" name="submit" value="Send Message" button class="btn" "pull-right">
+                            </div>
+                        </div>
+                        <!--???where do I add this button??   class="btn" class="icon-plus" ???????  >-->
+                    </form>
                 </div>
             </div>
         </section>
@@ -161,7 +166,7 @@
                         <h2>We are located here</h2>
                         <!--EMBEDED iframe via 'share' MAP-->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25227.148880465775!2d-122.41992774648723!3d37.78081440451679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858083a662307b%3A0xfd99010c2dc1f950!2sSouth+of+Market%2C+San+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1479111175737" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        <!--                        <textarea placeholder="Describe yourself here..."></textarea>-->
+                        <!--                        <textarea placeholder="Describe yourself here..."></textarea>  where is the SUBMIT BUTTON??-->
                     </div>
 
                     <div class="one-third column">
@@ -180,6 +185,8 @@
         </section>
     </main>
 
+
+    <!--FOOTER-->
 
     <footer class="footer">
         <div class="container">
@@ -242,6 +249,7 @@
             </div>
         </div>
     </footer>
+
 
 
 </body>
