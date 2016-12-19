@@ -5,7 +5,6 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 
@@ -107,7 +106,7 @@ ul {
 }
 
 .footer-bottom {
-    background-color: #000;
+    background-color: #373737;
     color: #fff;
 }
 
@@ -236,6 +235,8 @@ ul {
 
 .one-third {
     width: 300px;
+    /*    padding might need to be taken out... not in instructions but fixes "contacy us"*/
+    padding-top: 75px;
 }
 
 .one-sixth {
@@ -267,10 +268,7 @@ ul {
 
 /*Header*/
 
-
-/*COMPOUND-SELECTORS*/
-
-.brand {
+<!--COMPOUND-SELECTORS--> .brand {
     font-size: 22px;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -284,7 +282,7 @@ ul {
 }
 
 .nav li:last-child {
-    border right: 0 none;
+    border-right: 0 none;
 }
 
 .nav {
@@ -425,6 +423,7 @@ ul {
     /*OUR TEAM*/
     /*About CSS*/
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .team-member h3 {
@@ -591,8 +590,8 @@ ul {
 
 .sidebar-form .btn {
     height: 30px;
-    padding-top: 0px;
-    padding-bottom: opx;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
     border: none;
@@ -630,8 +629,55 @@ input[type="tel"] {
     border-radius: 4px;
 }
 
+
+/*did i overlook adding a form class to manipulate email, text, name? possibly nuke this*/
+
+.form {
+    margin-bottom: 0px;
+}
+
 .form p {
     margin-bottom: 20px;
+}
+
+.contact-table {
+    width: 99%;
+    margin-bottom: 50px;
+}
+
+.contact-table caption {
+    color: #373737;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.contact-table th {
+    text-align: left;
+    background-color: white;
+    color: #373737;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.contact-table td {
+    color: #373737;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.contact-table tr:nth-child(odd) {
+    background-color: #f9f8f8;
+}
+
+.contact-table tr:hover {
+    background-color: #999999;
+    cursor: crosshair;
 }
 
 .contact-form input {
@@ -649,8 +695,8 @@ input[type="submit"].btn {
     /*this is the same? *FFFFFF*/
     height: 50px;
     width: 150px;
-    -webkit-transition: background: 0.5s ease 0s;
-    -moz-transition: background: 0.5s ease 0s;
+    -webkit-transition: background 0.5s ease 0s;
+    -moz-transition: background 0.5s ease 0s;
     transition: background 0.5s ease 0;
 }
 
@@ -709,7 +755,7 @@ input[type="submit"].btn {
 }
 
 .footer-bottom a:hover {
-    color: 5aedae2;
+    color: #5adae2;
     /*tourquoise*/
 }
 
@@ -735,7 +781,7 @@ input[type="submit"].btn {
     -webkit-transition: opacity 0.3s ease 0s;
     -moz-transition: opacity 0.3s ease-out;
     -ms-transition: opacity 0.3s ease-out;
-    -o-transition: opscity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease 0s;
 }
 
