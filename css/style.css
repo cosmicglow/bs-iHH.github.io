@@ -1,36 +1,33 @@
-@charset "UTF-8"
-/*Box-sizing*  DECLARE AT TOP SO IT OVERRIDES WHAT'S BELOW*/
+/*@charset "UTF-8" */
 
 html {
+    /*Box-sizing*  DECLARE AT TOP SO IT OVERRIDES WHAT'S BELOW*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    box-sizing: border-box;
     box-sizing: border-box;
 }
 
 
 /*COLORS 
 #000000      black
-#212121      darkest gray when dark gray not working
 #373737      very dark gray#1e1f1f 
 gray         gray
 #d3d3d3      light gray 
 #5adae2      bright tourquoise#1edce1
 4cd2da       dark tourquoise#5adae2  
-#0B676B;     dark teal
 #ob676b      teal
-#f9f8f8      beige#e0d8cd
+#f9f8f8      light beige/eggshell  background color for pages
+#e0d8cd      darkest beige ...contentbox color
 #edecea      main bkgrd
 #fff         White
 */
-
-
-/*--GLOBAL-RULES-->*/
 
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 1.5;
-    background: #edecea;
+    /*    background-color: #edecea;*/
 }
 
 h1 {
@@ -57,6 +54,7 @@ h4 {
 a {
     text-decoration: none;
     color: white;
+    transition: <property> <duration><timing-function><delay>;
 }
 
 p {
@@ -87,10 +85,36 @@ ul {
     /*    background-color: #d3d3d3;*/
 }
 
+.footer {
+    background-color: #373737;
+}
+
+.footer h4 {
+    color: #fff;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 0;
+    color: gray;
+}
+
+.footer ul {
+    font-size: 16px;
+    font-weight: 200;
+    color: gray;
+}
+
+.footer-bottom {
+    background-color: #000;
+    color: #fff;
+}
+
 .contentbox {
     background-color: #fff;
     padding: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .contentbox h4 {
@@ -118,7 +142,6 @@ ul {
     background-color: #5adae2;
     padding: 10px;
     margin-bottom: 70px;
-    /*DOES THIS NEED TO PULLRIGHT SO THE BTN GOES TO THE BTMRIGHT CORNER?*/
 }
 
 .contentbox>img {
@@ -203,7 +226,7 @@ ul {
     width: 460px;
 }
 
-.one-quarter {
+.one-quarter column {
     width: 220px;
 }
 
@@ -227,47 +250,13 @@ ul {
     margin-right: 0;
 }
 
-.nav {
-    padding-top: 60px;
-}
-
-.nav li {
-    font-size: 18px;
-    /*removed ul from this rule 12/11/2016*/
-    /*    font-size: 18px;*/
+nav ul li {
     display: inline-block;
-    float: none;
-    border-right: 1px solid #dedede;
-    /*light grey*/
-}
-
-.nav li:last-child {
-    /*the last li will be targeted*/
-    border-right: 0;
-    /*hides furthermost right border*/
-}
-
-nav a {
-    padding: 0px 10px;
-    -webkit-transition: color 0.3s ease 0s;
-    -moz-transition: color 0.3s ease-out;
-    -ms-transition: color 0.3s ease-out;
-    -o-transition: color 0.3s ease-out;
-    transition: color 0.3s ease-out;
-}
-
-nav a:hover {
-    color: #5adae2;
-}
-
-.active a {
-    color: #5adae2;
 }
 
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .img-responsive {
@@ -287,6 +276,39 @@ ul {
     padding-bottom: 45px;
 }
 
+.nav li {
+    float: none;
+    border-right: 1px solid #dedede;
+    /*light gray*/
+    font-size: 18px;
+}
+
+.nav li:last-child {
+    border right: 0 none;
+}
+
+.nav {
+    padding-top: 60px;
+}
+
+.nav a {
+    padding: 0px 10px;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opscity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
+}
+
+.nav a:hover {
+    color: #5adae2;
+    /* turquoise*/
+}
+
+.active a {
+    color: #5adae2;
+}
+
 .pull-right {
     float: right;
 }
@@ -302,11 +324,9 @@ ul {
     margin-bottom: 50px;
 }
 
-/*
 .page-header.home p {
     font-size: 18px;
     font-weight: 200;
-*/
 }
 
 .page-header.home a {
@@ -314,13 +334,12 @@ ul {
 }
 
 .page-header p {
-    font-size: 20px;
+    font-size: 26px;
     padding-left: 15px;
     color: #fff;
 }
 
 .page-header h1 {
-    font-size: 26px;
     font-weight: bold;
     padding-left: 15px;
     color: #fff;
@@ -335,7 +354,6 @@ ul {
 
 .page-header h1 {
     color: #000;
-    font-weight: bold;
 }
 
 .page-header.home {
@@ -363,23 +381,17 @@ ul {
 
 .message h3 {
     color: #fff;
-    font-size: 15px;
 }
 
 .main-content-top i {
     color: #5adae2;
     vertical-align: -10px;
-    /* centers icon to heading */
+    /* center icon to heading */
 }
 
 .main-content-top h1 {
     padding-top: 70px;
     padding-bottom: 70px;
-    text-align: center;
-}
-
-.icons p {
-    color: #fff;
 }
 
 .main-content-bottom h1 {
@@ -388,7 +400,6 @@ ul {
 
 .main-content-bottom h2 {
     color: #000;
-    font-size: 28px;
 }
 
 .main-content-bottom p {
@@ -396,7 +407,7 @@ ul {
 }
 
 .main-content-bottom {
-    padding-bottom: 0px;
+    padding-bottom: 75px;
 }
 
 .blog-tease p {
@@ -404,7 +415,7 @@ ul {
 }
 
 .blog-tease {
-    min-height: 210px;
+    height: 210px;
 }
 
 
@@ -414,7 +425,6 @@ ul {
     /*OUR TEAM*/
     /*About CSS*/
     margin-bottom: 40px;
-    text-align: center;
 }
 
 .team-member h3 {
@@ -428,8 +438,7 @@ ul {
 }
 
 .team-member h1 {
-    /*    text-align: center;*/
-    text-align: right;
+    text-align: center;
 }
 
 .team-member ul {
@@ -440,8 +449,7 @@ ul {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
-    /*    text-align: right;*/
-    /*this is not on typog exer...*/
+    text-align: right;
 }
 
 .team-member a {
@@ -449,7 +457,9 @@ ul {
 }
 
 .team-member a:hover {
+    /*    color: #1e1f1f;*/
     color: #5adae2;
+    /*tourquoise*/
 }
 
 .team-member i {
@@ -465,7 +475,9 @@ ul {
 
 .team-member i:hover {
     color: #5adae2;
-    background-color: #lelflf;
+    /*tourquoise*/
+    background-color: #1e1f1f;
+    /*almost black*/
 }
 
 .address,
@@ -486,9 +498,9 @@ ul {
 }
 
 .portfolio-title {
-    /* portfolio-title hides (portfolio image) text */
-    /*    display: none;*/
-    color: white;
+    /* hides (portfolio image) text */
+    display: none;
+    color: #fff;
     text-align: center;
     height: 308px;
     position: absolute;
@@ -496,18 +508,19 @@ ul {
     top: 0;
     left: 0;
     opacity: 0;
-    /*nothing displays at zero*/
+    /*0pacity @ zero, nothing displays*/
     padding: 10px;
     -webkit-transition: opacity 0.3s ease 0s;
     -moz-transition: opacity 0.3s ease-out;
     -ms-transition: opacity 0.3s ease-out;
-    -o-transition: opacity 0.3s ease-out;
+    -o-transition: opscity 0.3s ease-out;
     transition: opacity 0.3s ease 0s;
 }
 
 .portfolio-title:hover {
     background-color: #5adae2;
-    opacity: .9/*almost opaque*/
+    opacity: .9;
+    /*almost opaque*/
 }
 
 
@@ -520,7 +533,6 @@ ul {
     margin-top: 5px;
     margin-right: 5px;
     display: inline-block;
-    /*this property is not listed on typog exercise*/
 }
 
 .info i {
@@ -530,11 +542,11 @@ ul {
     text-align: center;
 }
 
-.info a:hover {
+.info i:hover {
     color: #5adae2;
 }
 
-.info i:hover {
+.info a:hover {
     color: #5adae2;
 }
 
@@ -567,14 +579,95 @@ ul {
     padding-bottom: 10px;
 }
 
+.sidebar-form input[type="text"] {
+    height: 30px;
+    width: 125px;
+    padding: 0px;
+    margin-bottom: 2px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.sidebar-form .btn {
+    height: 30px;
+    padding-top: 0px;
+    padding-bottom: opx;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: background 0.5s ease 0s;
+    -moz-transition: background 0.5s ease 0s;
+    transition: background 0.5s ease 0s;
+}
+
 
 /*Contact*/
 
 
-/*Group Selctor*/
-
-
 /*compound of table style, form style + p & map style + h2 --> 3 items sharg same properties*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    /*Group Selctor*/
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    background-color: white;
+    border: 1px;
+    display: inline-block;
+    height: 20px;
+    font-size: 14px;
+    color: #373737;
+    -webkit-boder-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.form p {
+    margin-bottom: 20px;
+}
+
+.contact-form input {
+    width: 445px;
+}
+
+input[type="submit"].btn {
+    border: none;
+    padding-top: 0;
+    padding-right: 22px;
+    padding-bottom: 0;
+    padding-left: 22px;
+    margin-top: 10px;
+    color: #ffffff;
+    /*this is the same? *FFFFFF*/
+    height: 50px;
+    width: 150px;
+    -webkit-transition: background: 0.5s ease 0s;
+    -moz-transition: background: 0.5s ease 0s;
+    transition: background 0.5s ease 0;
+}
+
+.contact-form textarea {
+    width: 445px;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    color: #373737;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
 
 .table,
 .form p,
@@ -585,50 +678,6 @@ ul {
 
 
 /*Footer*/
-
-.footer {
-    background-color: #373737;
-}
-
-.footer li {
-    color: gray;
-    background-color: #373737;
-}
-
-.footer h4 {
-    color: #fff;
-}
-
-.footer p {
-    font-size: 16px;
-    font-weight: 200;
-    margin-top: 0;
-    /*    color: gray;*/
-}
-
-.footer ul {
-    font-size: 16px;
-    font-weight: 200;
-    /*    color: gray;*/
-}
-
-.footer-bottom {
-    background-color: #212121;
-    color: #fff;
-}
-
-.footer-bottom a {
-    color: white;
-}
-
-.footer-bottom a:hover {
-    color: #5adae2;
-}
-
-.footer a:hover,
-.footer i:hover {
-    color: #5adae2;
-}
 
 .social {
     text-align: center;
@@ -651,24 +700,25 @@ ul {
 }
 
 .social-list i:hover {
-    background-color: #373737/*dark gray*/
+    background-color: #373737;
+    /*dark gray*/
 }
 
-
-/*BUTTONS and COMPOUND SELECTORS*/
-
-.btn > i {
-    /*child combinator, direct descendent combinator. any i tags below the .btn will be white*/
+.footer-bottom a {
     color: #fff;
 }
 
-page-header.btn {
-    margin-top: 40px;
-    margin-left: 20px;
+.footer-bottom a:hover {
+    color: 5aedae2;
+    /*tourquoise*/
 }
 
-.message .btn {
-    margin-left: 20px;
+
+/*footer links*/
+
+.footer a:hover,
+.footer i:hover {
+    color: #5adae2;
 }
 
 .btn {
@@ -678,18 +728,32 @@ page-header.btn {
     /*teal*/
     color: #fff;
     padding: 15px 20px;
-    border: 0 none;
+    border: none;
     margin-right: 10px;
     margin-bottom: 10px;
     margin-top: 20px;
-    -webkit-transition: background 0.3s ease 0s;
-    -moz-transition: background 0.3s ease-out;
-    -ms-transition: background 0.3s ease-out;
-    -o-transition: background 0.3s ease-out;
-    transition: background 0.3s ease-out;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opscity 0.3s ease-out;
+    transition: opacity 0.3s ease 0s;
 }
 
 .btn:hover {
     background-color: #588B8D;
-    /*lighter teal*/
+    /*light teal*/
+}
+
+.btn > i {
+    /*put this class AFTER any class defining btn color so only the color of 'i' tags will be white.*/
+    color: #fff;
+}
+
+.page-header .btn {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.message .btn {
+    margin-left: 20px;
 }
